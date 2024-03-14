@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
- int i,j,n,temp;
-    int arr[20];
+int i,j,n,temp;
+int arr[20];
 
-void input(){
+void input() {
     while (true){
         cout <<"masukan banyaknya elemen array : ";
         cin >> n;
@@ -18,12 +18,14 @@ void input(){
     cout << "====================" << endl;
     cout << "masukan elemen array" << endl;
     cout << "====================" << endl;
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cout << "data ke-" << (i + 1 ) << ": ";
         cin >> arr[i];
-    };
+    }
+}
 
-void InsrtionSort(){
+void InsertionSort() {
     for(i = 1; i <= n-1; i++){ //step 1
          temp = arr[i]; //step 2
 
@@ -37,7 +39,7 @@ void InsrtionSort(){
          arr[j+1] = temp;//step 5
     }
     
-}void display (){
+}void display () {
     cout << endl;
     cout << "=================================" << endl;
     cout << "Element Array yang telah tersusun" << endl;
@@ -49,11 +51,9 @@ void InsrtionSort(){
     cout << endl;  
 }
 
-
 int main(){
-    
-   input();
-    InsrtionSort();
+    input();
+    InsertionSort();
     display();
 
     system("pause");
