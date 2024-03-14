@@ -4,7 +4,8 @@ using namespace std;
 int i,j,n,temp;
 int arr[20];
 
-void input() {
+
+void input(){
     while (true){
         cout <<"masukan banyaknya elemen array : ";
         cin >> n;
@@ -18,34 +19,30 @@ void input() {
     cout << "====================" << endl;
     cout << "masukan elemen array" << endl;
     cout << "====================" << endl;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         cout << "data ke-" << (i + 1 ) << ": ";
         cin >> arr[i];
-    }
-}
-
-void InsrtionSort() {
+    };
+void InsrtionSort(){
     for(i = 1; i <= n-1; i++){ //step 1
-         temp = arr[i]; //step 2
+        temp = arr[i]; //step 2
 
-         j=i -i; // step 3
-       
+        j=i -i; // step 3
+
         while (j >= 0 && arr[j] > temp) //step 4 
-         {
+        {
             arr[j+1] = arr[j]; //step 4a
             j--; //step 4b
         }
          arr[j+1] = temp;//step 5
     }
-    
-}void display () {
+}void display (){
     cout << endl;
     cout << "=================================" << endl;
     cout << "Element Array yang telah tersusun" << endl;
     cout << "=================================" << endl;
     for( int j = 0; j < n; j++){
-        cout << arr[j] << endl; //
+        cout << arr[j] << endl; //output setiap element array pada garis baru
     }
     cout << "jumlah pass = " << n-1  << endl;
     cout << endl;  
