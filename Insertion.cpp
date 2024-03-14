@@ -3,7 +3,7 @@ using namespace std;
 
 int i,j,n,temp; //
 int arr[20];
-
+//
 
 void input(){
     while (true){
