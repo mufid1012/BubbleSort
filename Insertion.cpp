@@ -51,5 +51,11 @@ void InsrtionSort(){
 
 
 int main(){
-   
+    
+   input();
+    InsrtionSort();
+    display();
+
+    system("pause");
+    return 0;
 }
