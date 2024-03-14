@@ -25,7 +25,7 @@ void input() {
     }
 }
 
-void InsertionSort() {
+void InsrtionSort() {
     for(i = 1; i <= n-1; i++){ //step 1
          temp = arr[i]; //step 2
 
@@ -45,7 +45,7 @@ void InsertionSort() {
     cout << "Element Array yang telah tersusun" << endl;
     cout << "=================================" << endl;
     for( int j = 0; j < n; j++){
-        cout << arr[j] << endl; //output setiap element array pada garis baru
+        cout << arr[j] << endl; //
     }
     cout << "jumlah pass = " << n-1  << endl;
     cout << endl;  
@@ -53,9 +53,9 @@ void InsertionSort() {
 
 int main(){
     input();
-    InsertionSort();
+    InsrtionSort();
     display();
-    
+
     system("pause");
     return 0;
 }
