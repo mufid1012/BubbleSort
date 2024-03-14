@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int i,j,n,temp;
+int i,j,n,temp; //
 int arr[20];
 
 
