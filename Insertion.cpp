@@ -55,7 +55,7 @@ int main(){
     input();
     InsertionSort();
     display();
-
+    
     system("pause");
     return 0;
 }
