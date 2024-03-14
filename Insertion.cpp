@@ -23,6 +23,7 @@ void input(){
         cout << "data ke-" << (i + 1 ) << ": ";
         cin >> arr[i];
     };
+
 void InsrtionSort(){
     for(i = 1; i <= n-1; i++){ //step 1
         temp = arr[i]; //step 2
@@ -49,6 +50,7 @@ void InsrtionSort(){
 }
 
 int main(){
+
     input();
     InsrtionSort();
     display();
